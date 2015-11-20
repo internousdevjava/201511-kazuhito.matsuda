@@ -15,7 +15,7 @@ public class KisoKadai1 {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		System.out.print("１から１００までの数字を入れてください" + "\n");
+		System.out.println("１から１００までの数字を入れてください" );
 		int x = 0;
 		String tu = null;
 		boolean jo = true;
@@ -36,13 +36,13 @@ public class KisoKadai1 {
 			if (isNumber(tu)) {
 				x = Integer.parseInt(tu);
 				if ((x == 0) || (x >101)) {
-					System.out.print("もう一度打ってください"+ "\n");
+					System.out.println("もう一度打ってください");
 					continue;
 				} else {
 					break;
 				}
 			} else {
-				System.out.print("もう一度打ってください"+ "\n");
+				System.out.println("もう一度打ってください");
 			}
 		}
 		while (rt) {
@@ -57,13 +57,13 @@ public class KisoKadai1 {
 			if (isNumber(mo)) {
 				y = Integer.parseInt(mo);
 				if ((y ==0) || (y >100)) {
-					System.out.print("もう一度打ってください"+ "\n");
+					System.out.println("もう一度打ってください");
 					continue;
 				} else {
 					break;
 				}
 			} else {
-				System.out.print("もう一度打ってください"+ "\n");
+				System.out.println("もう一度打ってください");
 			}
 		}
 		for (int ui = 1; ui <= y; ui++) {
