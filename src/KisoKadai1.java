@@ -30,16 +30,19 @@ public class KisoKadai1 {
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
+
+
+
 			if (isNumber(tu)) {
 				x = Integer.parseInt(tu);
-				if ((x == 0) || (x > 100)) {
-					System.out.println("もう一度打ってください");
+				if ((x == 0) || (x >101)) {
+					System.out.print("もう一度打ってください"+ "\n");
 					continue;
 				} else {
 					break;
 				}
 			} else {
-				System.out.println("もう一度打ってください");
+				System.out.print("もう一度打ってください"+ "\n");
 			}
 		}
 		while (rt) {
@@ -50,16 +53,17 @@ public class KisoKadai1 {
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
+
 			if (isNumber(mo)) {
 				y = Integer.parseInt(mo);
-				if ((y == 0) || (y > 100)) {
-					System.out.println("もう一度打ってください");
+				if ((y ==0) || (y >100)) {
+					System.out.print("もう一度打ってください"+ "\n");
 					continue;
 				} else {
 					break;
 				}
 			} else {
-				System.out.println("もう一度打ってください");
+				System.out.print("もう一度打ってください"+ "\n");
 			}
 		}
 		for (int ui = 1; ui <= y; ui++) {
@@ -68,8 +72,8 @@ public class KisoKadai1 {
 
 				System.out.print(ui * pio + " ");
 			}
+			}
 		}
-	}
 
 	public static boolean isNumber(String val) {
 		try {
@@ -79,5 +83,8 @@ public class KisoKadai1 {
 			return false;
 		}
 	}
-}
+	}
+
+
+
 
