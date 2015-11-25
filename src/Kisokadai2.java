@@ -22,8 +22,18 @@ public class Kisokadai2 {
 
 		Random ban = new Random();
 
+
+
 		int r = ban.nextInt(100) + 1;
-		System.out.println("１から１００までの数字を入れてください"+"\n");
+		try{
+		System.out.println("１から１００までの数字を次の行から入れてください");
+
+
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+
+		}
 
 		while (jo) {
 
@@ -34,9 +44,11 @@ public class Kisokadai2 {
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
+
+
 			if (isNumber(tu)) {
 				x = Integer.parseInt(tu);
-				if ((x == 0) || (x > 100)) {
+				if ((x <= 0) || (x > 100)) {
 					System.out.println("１から１００までの数字を打ってください");
 					continue;
 				}
@@ -54,7 +66,10 @@ public class Kisokadai2 {
 				System.out.println("１から１００までの数字を打ってください");
 			}
 		}
-	}
+		}
+
+
+
 
 	public static boolean isNumber(String val) {
 		try {
@@ -62,6 +77,8 @@ public class Kisokadai2 {
 			return true;
 		} catch (NumberFormatException nfex) {
 			return false;
+
 		}
+
 	}
 }
